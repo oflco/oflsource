@@ -1,7 +1,5 @@
-﻿// Copyright (c) Onkgopotse Lenake.
-// Licensed under the MIT License.
-
-using OFLenake.Core;
+﻿// Copyright (c) 2023 Onkgopotse Lenake. Web: https://www.onkgopotselenake.me/.
+// Licensed under the MIT license. See LICENSE file for license information.
 
 namespace OFLenake
 {
@@ -11,7 +9,7 @@ namespace OFLenake
     public class OFLConsole
     {
         private static readonly string AppTitle = $"OFLenake.OFLConsole";
-        private static Information? OFLInfo = null;
+        private static Profile? OFLProfile = null;
 
         /// <summary>
         /// OFLenake console runner application main method.
@@ -30,10 +28,10 @@ namespace OFLenake
         {
             Console.WriteLine($"{AppTitle} started...\n");
 
-            OFLInfo = new Information();
-            Console.WriteLine($"{OFLInfo}\n");
+            OFLProfile = new Profile();
+            Console.WriteLine($"{OFLProfile}");
 
-            Console.WriteLine($"{AppTitle} finished...\n");
+            Console.WriteLine($"{AppTitle} finished...");
         }
     }
 }
